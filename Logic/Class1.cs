@@ -29,10 +29,10 @@ namespace Logic
 
 
         public static int IncreaseSumComp(int[] lhs, int[] rhs) => lhs.Sum() - rhs.Sum();
-        private static int DecreaseSumComp(int[] lhs, int[] rhs) => IncreaseSumComp(rhs, lhs);
-        private static int IncreaseMaxComp(int[] lhs, int[] rhs) => lhs.Max() - rhs.Max();
-        private static int DecreaseMaxComp(int[] lhs, int[] rhs) => IncreaseMaxComp(rhs, lhs);
-        private static int IncreaseMinComp(int[] lhs, int[] rhs) => lhs.Min() - rhs.Min();
-        private static int DecreaseMinComp(int[] lhs, int[] rhs) => IncreaseMinComp(rhs, lhs);
+        public static int DecreaseSumComp(int[] lhs, int[] rhs) => IncreaseSumComp(rhs, lhs);
+        public static int IncreaseMaxComp(int[] lhs, int[] rhs) => lhs.Max() - rhs.Max();
+        public static int DecreaseMaxComp(int[] lhs, int[] rhs) => IncreaseMaxComp(rhs, lhs);
+        public static int IncreaseMinComp(int[] lhs, int[] rhs) => lhs.Min() - rhs.Min();
+        public static int DecreaseMinComp(int[] lhs, int[] rhs) => IncreaseMinComp(rhs, lhs);
     }
 }
